@@ -1,0 +1,5 @@
+<h2>Task 1:</h2>
+<app-button (wasClicked)="buttonState()"></app-button>
+<p *ngIf="showEmpty">List is empty</p>
+<p *ngIf="showLoading">Loading...</p>
+<app-card [users]="users"></app-card>

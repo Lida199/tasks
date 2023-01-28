@@ -1,0 +1,10 @@
+<div *ngIf="users" id="users">
+    <p>{{users | showUsers}}</p>
+    <div class="card" *ngFor="let user of users" appBackground [status]="user.status">
+        <h3>{{user.firstName}} {{user.lastName}}</h3>
+        <p>{{user.about}}</p>
+        <p>{{user.birthDate | showAge}}</p>
+        <button>{{user.status}}</button>
+    </div>
+</div>
+

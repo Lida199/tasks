@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    width: 350px;
+    height: 350px;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+h2, .container{
+    margin-left: 20px;
+}
