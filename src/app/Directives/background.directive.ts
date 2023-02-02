@@ -1,10 +1,11 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { Statuses } from '../model/data.interface';
 
 @Directive({
   selector: '[appBackground]',
 })
 export class BackgroundDirective {
-  @Input() status!: 'Deleted' | 'Active' | 'Inactive';
+  @Input() status!: Statuses;
   constructor(private element: ElementRef) {}
   ngOnInit() {
     switch (this.status) {

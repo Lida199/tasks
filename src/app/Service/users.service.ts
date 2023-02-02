@@ -1,4 +1,4 @@
-import { Data } from '../Model/data.interface';
+import { Data } from '../model/data.interface';
 
 export class UsersService {
   constructor() {}

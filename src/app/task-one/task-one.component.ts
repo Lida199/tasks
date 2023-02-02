@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from '../Service/users.service';
-import { Data } from '../Model/data.interface';
+import { UsersService } from '../service/users.service';
+import { Data } from '../model/data.interface';
 
 @Component({
   selector: 'app-task-one',
